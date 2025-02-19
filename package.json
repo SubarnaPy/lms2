@@ -4,11 +4,11 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon backend/server.js",
-    "dev": "nodemon backend/server.js",
-    "build": "npm install && npm install --prefix frontendd && npm run build --prefix frontendd"
-  },
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start": "nodemon backend/server.js",
+  "dev": "nodemon backend/server.js",
+  "build": "npm install --legacy-peer-deps && npm install --prefix frontendd --legacy-peer-deps && npm run build --prefix frontendd"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",

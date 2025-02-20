@@ -87,7 +87,7 @@ function HomePage() {
                 transition={{ duration: 0.5, delay: index * 0.2 }}
                 className="cursor-pointer"
               >
-                <CourseCard data={course} />
+                {/* <CourseCard data={course} /> */}
               </motion.div>
             ))}
           </div>

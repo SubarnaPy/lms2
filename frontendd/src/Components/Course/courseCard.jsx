@@ -1,10 +1,10 @@
+import PropTypes from "prop-types";
 import { FaShoppingCart, FaStar, FaUsers } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import GetAvgRating from "../../utils/AvgRating";
 
 const CourseCard = ({ data }) => {
   const navigate = useNavigate();
-  console.log(data)
 
   const handle = (e) => {
     e.stopPropagation(); // Prevent event bubbling
@@ -72,6 +72,29 @@ const CourseCard = ({ data }) => {
       </div>
     </div>
   );
+};
+
+// ✅ Add PropTypes validation
+CourseCard.propTypes = {
+  data: PropTypes.shape({
+    _id: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string,
+    thumbnail: PropTypes.shape({
+      secure_url: PropTypes.string.isRequired,
+    }),
+    category: PropTypes.shape({
+      name: PropTypes.string,
+    }),
+    ratingAndReviews: PropTypes.arrayOf(
+      PropTypes.shape({
+        rating: PropTypes.number,
+        review: PropTypes.string,
+      })
+    ),
+    studentEnrolled: PropTypes.arrayOf(PropTypes.string),
+    price: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default CourseCard;

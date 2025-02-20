@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
-  "scripts": {
+ "scripts": {
   "test": "echo \"Error: no test specified\" && exit 1",
   "start": "nodemon backend/server.js",
   "dev": "nodemon backend/server.js",
-  "build": "npm install --legacy-peer-deps && npm install --prefix frontendd --legacy-peer-deps && npm run build --prefix frontendd"
+  "build": "npm install --legacy-peer-deps && cd frontendd && npm install --legacy-peer-deps && npm run build"
 },
   "keywords": [],
   "author": "",

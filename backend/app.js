@@ -154,9 +154,9 @@ app.use(morgan('dev'));
 app.use(cookieParser());
 
 // Server status check
-app.get('/', (req, res) => {
-  res.send('Server is running...');
-});
+// app.get('/', (req, res) => {
+//   res.send('Server is running...');
+// });
 
 // Routes
 app.use('/api/v1/user', userRoutes);

@@ -23,7 +23,8 @@ import RequirementField from './RequirementField';
 // import { Grid } from "@mui/material";
 import { Controller } from "react-hook-form";
 import ReactQuill from "react-quill";
-import "react-quill/dist/quill.snow.css";
+import 'quill/dist/quill.snow.css';
+
 
 const CourseInformationForm = () => {
 

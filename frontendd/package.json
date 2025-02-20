@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npx vite build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -25,11 +25,12 @@
     "create-redux-store": "^1.1.2",
     "daisyui": "^4.12.23",
     "prop-types": "^15.8.1",
-    "react": "^19.0.0",
+    "quill": "^2.0.3",
+    "react": "^18.3.1",
     "react-bubbles": "^0.0.1",
     "react-chartjs-2": "^5.3.0",
     "react-circular-progressbar": "^2.1.0",
-    "react-dom": "^19.0.0",
+    "react-dom": "^18.3.1",
     "react-dropzone": "^14.3.5",
     "react-hook-form": "^7.54.2",
     "react-hot-toast": "^2.5.2",
